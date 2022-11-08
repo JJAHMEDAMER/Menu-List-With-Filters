@@ -109,7 +109,8 @@ body {
     background-color: #ffffff00;
     border-width: 0 0 3px 0px;
     border-color: var(--gold);
-    width: 40px;
+    /* width: 40px; */
     font-family: "Karla";
     font-size: 1.2rem;
+    margin-left: 5px;
 }
