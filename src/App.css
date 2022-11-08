@@ -1,4 +1,8 @@
-:root {}
+:root {
+    --gold: #a67c00;
+    --gold-bg: #ffdc73;
+    --card-color: #ffffffec;
+}
 
 *,
 *::before,
@@ -8,6 +12,41 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Karla";
+    background-color: var(--gold-bg);
+}
+
+.card {
+    display: flex;
+    padding: 2rem 3rem;
+    background-color: var(--card-color);
+    border-radius: 0.5rem;
+}
+
+.card--info{
+    padding: 0rem 2rem;
+}
+
+.card--img {
+    width: 22rem;
+    height: 10rem;
+    object-fit: cover;
+    border-color: var(--gold);
+    border-width: 0.3rem;
+    border-style: solid;
+    border-radius: 0.9rem;
+}
+
+.card--bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card--divider {
+    height: 0.1rem;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 1rem;
 }
