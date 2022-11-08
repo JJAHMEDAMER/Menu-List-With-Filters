@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = (props) => (
   <div className="card">
-    <img className="card--img" src={props.img} />
+    <img className="card--img" src={props.img} alt="food img"/>
     <div className="card--info">
       <div className="card--bar">
         <h1 className="card--bar--title">{props.title}</h1>

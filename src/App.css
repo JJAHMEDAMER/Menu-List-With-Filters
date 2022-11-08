@@ -34,11 +34,11 @@ body {
 }
 
 .app--underline {
-    height: 0.4rem;
-    width: 10rem;
+    height: 0.35rem;
+    width: 12rem;
     background-color: var(--gold);
     margin-bottom: 2rem;
-
+    border-radius: 0.2rem;
 }
 
 .app--content {
@@ -52,6 +52,7 @@ body {
     padding: 1.5rem 2rem;
     background-color: var(--card-color);
     border-radius: 0.9rem;
+    box-shadow: 0 5px 10px -5px #a67c00;
 }
 
 .card--info {
@@ -77,13 +78,14 @@ body {
 }
 
 .card--img {
-    height: 100px;
-    width: 110px;
+    /* height: 100px; */
+    width: 95px;
     object-fit: cover;
     border-color: var(--gold);
-    border-width: 0.28rem;
+    border-width: 0.15rem;
     border-style: solid;
     border-radius: 0.7rem;
+    
 }
 
 .card--bar {
@@ -97,4 +99,17 @@ body {
     width: 100%;
     background-color: black;
     margin-bottom: 1rem;
+}
+
+.app--filter{
+    margin-bottom: 1rem;
+}
+
+.filter--button{
+    background-color: #ffffff00;
+    border-width: 0 0 3px 0px;
+    border-color: var(--gold);
+    width: 40px;
+    font-family: "Karla";
+    font-size: 1.2rem;
 }
