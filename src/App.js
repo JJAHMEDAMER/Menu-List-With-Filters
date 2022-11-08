@@ -1,16 +1,21 @@
 import React from "react";
 
 //data
-import data from "./data"
+import data from "./data";
 
 // Comp
-import Card from "./comp/card"
+import Card from "./comp/card";
+
+const cardsList = data.map(item => <Card {...item} />)
 
 function App() {
   return (
-    <div>
-      <h1>Our Menu</h1>
-      <Card {...data[1]}/>
+    <div className="app">
+      <h1 className="app--title">Our Menu</h1>
+      <div className="app--underline"></div>
+      <div className="app--content">
+        {cardsList}
+      </div>
     </div>
   );
 }

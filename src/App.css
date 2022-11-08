@@ -15,27 +15,75 @@
 body {
     font-family: "Karla";
     background-color: var(--gold-bg);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+}
+
+.app--title {
+    color: #ffffff;
+    font-size: 3.2rem;
+}
+
+.app--underline {
+    height: 0.4rem;
+    width: 10rem;
+    background-color: var(--gold);
+    margin-bottom: 2rem;
+
+}
+
+.app--content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .card {
     display: flex;
-    padding: 2rem 3rem;
+    padding: 1.5rem 2rem;
     background-color: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: 0.9rem;
 }
 
-.card--info{
-    padding: 0rem 2rem;
+.card--info {
+    padding-left: 1.5rem;
+}
+
+.card--bar {
+    margin-bottom: 0.3rem;
+}
+
+.card--bar--title {
+    font-size: 1.3rem;
+}
+
+.card--bar--price {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gold);
+}
+
+.card--desc {
+    font-size: 0.8rem;
 }
 
 .card--img {
-    width: 22rem;
-    height: 10rem;
+    height: 100px;
+    width: 110px;
     object-fit: cover;
     border-color: var(--gold);
-    border-width: 0.3rem;
+    border-width: 0.28rem;
     border-style: solid;
-    border-radius: 0.9rem;
+    border-radius: 0.7rem;
 }
 
 .card--bar {
