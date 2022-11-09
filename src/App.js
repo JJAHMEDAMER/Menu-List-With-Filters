@@ -7,17 +7,15 @@ import data from "./data";
 import Card from "./comp/card";
 import FilterNavBar from "./comp/filter_nav_bar";
 
-let catSet = [];
+let catList = [];
 
 for (var i = 0; i < data.length; i++) {
-  if (data[i]["category"] in catSet) {
-    i++;
-  } else {
-    catSet.push(data[i]["category"]);
-  }
+  catList.push(data[i]["category"]);
 }
 
-const buttonList = catSet.map((item) => (
+const uniqueCatList = new Set(catList);
+
+const buttonList = [...uniqueCatList].map((item) => (
   <FilterNavBar cat={item} onClickFilterButton={FilterButton} />
 ));
 
