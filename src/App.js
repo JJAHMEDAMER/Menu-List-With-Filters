@@ -24,8 +24,12 @@ function App() {
   ));
 
   function FilterButton(cat) {
-    const filteredCardsList = data.filter((item) => item.category === cat);
-    setMenuList(filteredCardsList);
+    if (cat === "All") {
+      setMenuList(data);
+    } else {
+      const filteredCardsList = data.filter((item) => item.category === cat);
+      setMenuList(filteredCardsList);
+    }
   }
   return (
     <div className="app">
