@@ -15,17 +15,18 @@ for (var i = 0; i < data.length; i++) {
 
 const uniqueCatList = new Set(catList);
 
-const buttonList = [...uniqueCatList].map((item) => (
-  <FilterNavBar cat={item} onClickFilterButton={FilterButton} />
-));
-
-function FilterButton() {
-  alert("working");
-}
-
 function App() {
-  const cardsList = data.map((item) => <Card {...item} />);
+  const [menuList, setMenuList] = React.useState(data);
+  const cardsList = menuList.map((item) => <Card {...item} />);
 
+  const buttonList = ["All", ...uniqueCatList].map((item) => (
+    <FilterNavBar cat={item} onClickFilterButton={FilterButton} />
+  ));
+
+  function FilterButton(cat) {
+    const filteredCardsList = data.filter((item) => item.category === cat);
+    setMenuList(filteredCardsList);
+  }
   return (
     <div className="app">
       <h1 className="app--title">Our Menu</h1>

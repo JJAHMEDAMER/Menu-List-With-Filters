@@ -2,7 +2,10 @@ import React from "react";
 
 function FilterNavBar({ cat, onClickFilterButton }) {
   return (
-    <button className="filter--button" onClick={onClickFilterButton}>
+    <button
+      className="filter--button"
+      onClick={() => onClickFilterButton(cat)}
+    >
       {cat}
     </button>
   );

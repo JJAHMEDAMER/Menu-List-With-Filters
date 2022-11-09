@@ -103,16 +103,19 @@ body {
 
 .app--filter{
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
 }
 
 .filter--button{
     background-color: #ffffff00;
     border-width: 0 0 3px 0px;
     border-color: var(--gold);
-    width: 110px;
+    width: 6.5rem;
     font-family: "Karla";
     font-size: 1.2rem;
     font-weight: 600;
-    margin-left: 25px;
     padding: 0.5rem;
 }
